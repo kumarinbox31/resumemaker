@@ -1,0 +1,84 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/aldsicon.png">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="assets/img/aldsicon.png">
+  <title>
+    {{dname}}'s Porfolio - Made with Portfolio Maker
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+ 
+  <link href=" {{url_for('static',filename = 'assets/css/nucleo-icons.css')}}" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="{{url_for('static',filename = 'assets/css/blk-design-system.css')}}" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="{{url_for('static',filename = 'assets/demo/demo.css')}}" rel="stylesheet" />
+</head>
+
+<body class="profile-page">
+  <!-- Navbar -->
+
+  <!-- End Navbar -->
+
+
+
+
+  <div class="conatiner-flued" style="background:#20206f;color:white;">
+        <div class="row">
+            <div class="col-6" style="padding:70px;margin-top:10%">
+                <div class="container">
+                    <h1 style="font-family:fantasy;font-size:70px;color:#6464a3;"> ABHIJEET KUMAR </h1>
+                </div>
+                <div class="container" style="margin-top:10px;">
+                    <p> To be associated with a progressive organization, where 
+                    I can employ web developer, programmer & Computer Vision knowledge 
+                    and skills to contribute the growth of the organization 
+                    and personal growth in an effectual manner.</p>
+                </div>
+            </div>
+              <img src="static/design1.jpg" alt="no image found" style="border-radius: 50%;width: 200px;height: 167px;">
+            <div class="col-6" style="padding:70px;margin-top:10%">
+                  
+                <div class="container" width="50%" height="50%" style="border:2px solid black">
+                    <h3> Profile </h3>
+
+                </div>
+            </div>
+            
+            </div>
+        </div>
+  </div>
+   
+
+
+  <!--   Core JS Files   -->
+  <script src="{{url_for('static',filename = 'assets/js/core/jquery.min.js')}}" type="text/javascript"></script>
+  <script src="{{url_for('static',filename = 'assets/js/core/popper.min.js')}}" type="text/javascript"></script>
+  <script src="{{url_for('static',filename = 'assets/js/core/bootstrap.min.js')}}" type="text/javascript"></script>
+  <script src="{{url_for('static',filename = 'assets/js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="{{url_for('static',filename = 'assets/js/plugins/bootstrap-switch.js')}}"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="{{url_for('static',filename = 'assets/js/plugins/nouislider.min.js')}}" type="text/javascript')}}"></script>
+  <!-- Chart JS -->
+  <script src="{{url_for('static',filename = 'assets/js/plugins/chartjs.min.js')}}"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="{{url_for('static',filename = 'assets/js/plugins/moment.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'assets/js/plugins/bootstrap-datetimepicker.js')}}" type="text/javascript"></script>
+  <!-- Black Dashboard DEMO methods, don't include it in your project! -->
+  <script src="{{url_for('static',filename = 'assets/demo/demo.js')}}"></script>
+  <!-- Control Center for Black UI Kit: parallax effects, scripts for the example pages etc -->
+  <script src="{{url_for('static',filename = 'assets/js/blk-design-system.min.js')}}" type="text/javascript"></script>
+</body>
+
+</html>

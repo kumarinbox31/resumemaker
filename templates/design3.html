@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>{{dbfullname}}'s Boi Data </title>
+  </head>
+  <body style="background:white;color:black;">
+    
+
+<div class="container col-sm-6 col-md-12" id="print-content" >
+<div class="photo">
+<h3 style="color:black;-webkit-print-color-adjust: exact;font-weight:bold;" class="header">{{dbfullname}}</h3>
+<h5 style="margin-left:35px;">Contact Number : +91-{{dbcnumber}} </h5>
+<h5 style="margin-left:35px;">Email Id : {{dbemail}}</h5>
+
+
+<div class="container">
+  <img src="static/img_avatar.png" alt="Avatar" class="image">
+  <div class="overlay">
+  <a href="#" class="icon" title="User Profile">
+    <i class="fa fa-user"></i>
+  </a>
+  </div>
+
+</div>
+
+<h3>Personal Details</h3>
+            <p>
+            <ul style="list-style-type:none;" >
+                <li>Father's Name : {{dbfahter}}</li>
+                <li>Mother's Name : {{dbmother}}</li>
+                <li>Date of Birth : {{dbdob}}</li>
+                <li>Permanent Address : {{dbaddress}}</li>
+                <li>Sex : {{dbsex}} </li>
+                <li>Nationality : {{dbnationality}} </li>
+                <li>Religion : {{dbreligion}} </li>
+                <li>Marital Status : {{dbmaritalstatus}} </li>
+                </ul>
+            </p>
+<h3>Academic  Qualification</h3>
+            <p>
+            <ul >
+                <li>	Intermediate with {{dbcstream}} from {{dbcschoolname}} from {{dbcboardname}} with {{dbcpercentage}}%.</li>
+                <li>High School from {{dbschoolname}} from {{dbboardname}} with {{dbpercentage}}</li>
+                
+                </ul>
+            </p>
+<h3>Skills</h3>
+            <p>
+            <ul >
+                <li>{{dbskill1}}</li>
+                <li>{{dbskill2}}</li>
+                <li>{{dbskill3}}</li>
+                <li>{{dbskill4}}</li>
+                
+                
+                </ul>
+            </p>
+
+
+<h3>Strengths</h3>
+            <p>
+            <ul >
+                <li>Willing to work with 
+                true dedication and integrity towards the organization.</li>
+                <li>Self motivated and adopt myself with the 
+                changing environment.</li>
+                <li>Hard working with honesty and positive mindset. </li>
+                
+                
+                </ul>
+            </p>
+
+<h3>Hobies</h3>
+            <p>
+            <ul >
+                 <li>{{dbhoby1}}</li>
+                <li>{{dbhoby2}}</li>
+                <li>{{dbhoby3}}</li>
+                
+                
+                </ul>
+            </p>
+<p style="margin-top:-17px;"><strong>Decelaration:</strong> I hereby declare that all the above 
+statements provided by me are true 
+to the best of my knowledge and believe. </p>
+
+<p style="margin-top:-17px;"><strong>Place:</strong> {{dbplace}} </p>
+<p style="margin-top:-17px;"><strong>Date:</strong> {{dbdate}} <i style="float:right;"> <b>({{dbfullname}})</b> </i></p>
+
+
+<center style="margin-top:20px;">
+<input type="button" value="Print" class="btn btn-dark" onClick="window.print()">
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+    <script type="text/javascript">
+    function printDiv(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        w=window.open();
+        w.document.write(printContents);
+        w.print();
+        w.close();
+    }
+</script>
+  </body>
+  <style>
+  body {
+    background-image: url('static/1234.JPG');
+  -webkit-print-color-adjust: exact !important;
+  -webkit-print-background-adjust: exact !important;
+}
+@media print{
+  .no-print{
+            display: none;
+                }}
+
+.header{
+    text-decoration:underline;
+}
+.profile {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin-top: -80px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+h3{
+  text-decoration:underline;
+  font-weight:bold;
+}
+ul{
+  margin-left:30px;
+}
+</style
+</html>
