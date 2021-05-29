@@ -57,10 +57,17 @@
             <ul >
                 <li>{{dbskill1}}</li>
                 <li>{{dbskill2}}</li>
+
+                {% if dbskill3!="" %}
                 <li>{{dbskill3}}</li>
+                {% endif %}
+
+               {% if dbskill4!="" %}
                 <li>{{dbskill4}}</li>
                 
-                
+                {% endif %}
+               
+              
                 </ul>
             </p>
 
@@ -83,8 +90,10 @@
             <ul >
                  <li>{{dbhoby1}}</li>
                 <li>{{dbhoby2}}</li>
+
+                {% if dbhoby3 != "" %}
                 <li>{{dbhoby3}}</li>
-                
+               {% endif %}
                 
                 </ul>
             </p>
