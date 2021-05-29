@@ -1,6 +1,6 @@
 from flask import Flask,render_template,request
 import uuid
-from datetime import date
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -145,7 +145,7 @@ def upload3():
         hoby3 = request.form.get("hoby3")
 
         place = request.form.get("place")
-        date=date.today()
+        date=datetime.today().strftime('%d-%m-%Y')
        
     
     return render_template("design3.html",dbfullname=fullname,dbdob=dob,dbreligion=religion,dbfather=father,dbmother=mother,dbaddress=address,dbcnumber=cnumber,
