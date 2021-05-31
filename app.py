@@ -34,8 +34,8 @@ def design2():
 @app.route("/design3")
 def design3():
     return render_template("design3.html")
-@app.route("/design3")
-def design3():
+@app.route("/design4")
+def design4():
     return render_template("design4.html")
 
 
