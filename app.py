@@ -34,6 +34,10 @@ def design2():
 @app.route("/design3")
 def design3():
     return render_template("design3.html")
+@app.route("/design3")
+def design3():
+    return render_template("design3.html")
+
 
 @app.route("/form")
 def form():
