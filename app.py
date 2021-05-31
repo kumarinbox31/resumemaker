@@ -36,7 +36,7 @@ def design3():
     return render_template("design3.html")
 @app.route("/design3")
 def design3():
-    return render_template("design3.html")
+    return render_template("design4.html")
 
 
 @app.route("/form")
